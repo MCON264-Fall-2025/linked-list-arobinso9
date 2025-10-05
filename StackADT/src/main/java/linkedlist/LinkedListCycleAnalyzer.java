@@ -9,7 +9,7 @@ public class LinkedListCycleAnalyzer<T> {
      * and length of the cycle. Uses O(1) extra space.
      *
      * @param head The head of the singly linked list.
-     * @return A CycleInfo object containing the entry index and cycle length.
+     * @return A  CycleInfo object containing the entry index and cycle length.
      */
     public static <T> CycleInfo detectCycleInfo(LLNode<T> head){
         if (head == null || head.getLink() == null) {
