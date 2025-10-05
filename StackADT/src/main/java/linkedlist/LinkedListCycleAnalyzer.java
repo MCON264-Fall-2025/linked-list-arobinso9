@@ -51,7 +51,7 @@ public class LinkedListCycleAnalyzer<T> {
             pointer2 = pointer2.getLink();
             entryIndex++; // Count the steps from the head to the entry node (aka the steps from the meetingPoint to the entry node)
         }
-        // Stage 3: Calculate Cycle Length
+        // Stage 3 : Calculate Cycle Length
         // Start a third pointer from the entry node and count steps until it returns.
         LLNode<T> entryNode = pointer1; // This is the cycle entry node- equal to pointer2 at this point
         LLNode<T> current = entryNode.getLink(); //current starts at the second node of the cycle
